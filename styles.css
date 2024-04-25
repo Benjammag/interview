@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400:500:6005d1splay=swap");
+
+/* section 1 */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1300px !important;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  background-color: #060417;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+.wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(50px);
+  margin: 0 40px;
+}
+
+.content {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 12rem;
+  height: auto;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0.5rem;
+}
+
+.title {
+  font-style: italic;
+  font-size: 17.3px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+
+content ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+content li {
+  margin: 0 1.5rem;
+}
+
+.item {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.item::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 769px) {
+  .content ul {
+    display: none;
+  }
+}
+
+@media (max-width: 1325px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
+}
+/* section 2 */
+#about {
+  padding: 30px;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  position: relative;
+  padding: px;
+}
+
+.gen {
+  display: flex;
+}
+
+.second-wrapper {
+  padding-left: 10rem;
+}
+
+.album {
+  display: inline-flex;
+  float: left;
+}
+
+.image {
+  width: 400px;
+  height: auto;
+  padding: 2rem;
+}
+
+.album h3 {
+  padding-left: 2rem;
+}
